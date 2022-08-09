@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bonus Item
   - Pellet
+  - Power Pellet
   layers:
   - Default
   - TransparentFX

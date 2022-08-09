@@ -136,8 +136,6 @@ public class Pacman : MonoBehaviour
     /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.name);
-
         //Detect collisions
         switch (other.tag)
         {
