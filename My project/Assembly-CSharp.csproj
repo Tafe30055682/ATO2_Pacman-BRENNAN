@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E4BA98F9-6022-D58C-779D-A07841982266}</ProjectGuid>
+    <ProjectGuid>{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,16 +53,15 @@
     <UnityVersion>2020.3.26f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts 1\Interactive.cs" />
-    <Compile Include="Assets\Scripts\AI\Pinky.cs" />
-    <Compile Include="Assets\Scripts\Pacman.cs" />
-    <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\AI\Clyde.cs" />
-    <Compile Include="Assets\Scripts\AI\Blinky.cs" />
-    <Compile Include="Assets\Scripts\AI\Ghost.cs" />
-    <Compile Include="Assets\Scripts\AI\Inky.cs" />
-    <Compile Include="Assets\Scripts\Agent.cs" />
+    <Compile Include="Assets\AI\Pinky.cs" />
+    <Compile Include="Assets\CameraController.cs" />
+    <Compile Include="Assets\Pacman.cs" />
+    <Compile Include="Assets\AI\Clyde.cs" />
+    <Compile Include="Assets\AI\Blinky.cs" />
+    <Compile Include="Assets\AI\Ghost.cs" />
+    <Compile Include="Assets\AI\Inky.cs" />
+    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Agent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
