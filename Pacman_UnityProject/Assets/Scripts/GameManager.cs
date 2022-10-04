@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Text scoreText;
     [SerializeField] private Transform bonusItemSpawn;
     [SerializeField] private Bounds ghostSpawnBounds;
-    [SerializeField] private GameObject endPanel;
+    [SerializeField] private GameObject deathPanel;
+    [SerializeField] private GameObject winPanel;
     [SerializeField] private AudioClip pelletClip;
     [SerializeField] private AudioClip powerPelletClip;
     [SerializeField] private AudioClip bonusItemClip;
@@ -79,8 +80,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {        
         //Assign delegates/events
-        Event_GameVictory += ToggleEndPanel;
-        Delegate_GameOver += ToggleEndPanel;
+        Event_GameVictory += ToggleWinPanel;
+        Delegate_GameOver += ToggleDeathPanel;
         //Disable bonus item
         if (bonusItem != null)
         {
@@ -240,7 +241,7 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Toggles the end game panel on and off.
     /// </summary>
-    private void ToggleEndPanel()
+    private void ToggleDeathPanel()
     {
         if(endPanel.activeSelf == false)
         {
@@ -251,7 +252,17 @@ public class GameManager : MonoBehaviour
             endPanel.SetActive(false);
         }
     }
-
+    private void ToggleWinPanel()
+    {
+        if (endPanel.activeSelf == false)
+        {
+            endPanel.SetActive(true);
+        }
+        else
+        {
+            endPanel.SetActive(false);
+        }
+    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
