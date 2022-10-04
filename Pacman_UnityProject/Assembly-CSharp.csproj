@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\AI\Ghost.cs" />
     <Compile Include="Assets\Scripts\AI\Inky.cs" />
     <Compile Include="Assets\Scripts\Agent.cs" />
+    <Compile Include="Assets\Scripts\PelletScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
