@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
 
     //Singletons
     public static GameManager Instance { get; private set; }
-
+     
     //Delegates
     public delegate void PowerUp();
     public delegate void GameEvent();
@@ -92,11 +92,11 @@ public class GameManager : MonoBehaviour
             Debug.LogError("Game Manager: Bonus item must be in the scene and tagged as 'Bonus Item'!");
         }
         //Disable end game panel
-        if (endPanel != null)
+        if (deathPanel != null)
         {
-            if (endPanel.activeSelf == true)
+            if (deathPanel.activeSelf == true)
             {
-                ToggleEndPanel();
+                ToggleDeathPanel();
             }
         }
         else
@@ -243,24 +243,24 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void ToggleDeathPanel()
     {
-        if(endPanel.activeSelf == false)
+        if(deathPanel.activeSelf == false)
         {
-            endPanel.SetActive(true);
+            deathPanel.SetActive(true);
         }
         else
         {
-            endPanel.SetActive(false);
+            deathPanel.SetActive(false);
         }
     }
     private void ToggleWinPanel()
     {
-        if (endPanel.activeSelf == false)
+        if (winPanel.activeSelf == false)
         {
-            endPanel.SetActive(true);
+            winPanel.SetActive(true);
         }
         else
         {
-            endPanel.SetActive(false);
+            winPanel.SetActive(false);
         }
     }
     private void OnDrawGizmos()

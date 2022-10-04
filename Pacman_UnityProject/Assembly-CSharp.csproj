@@ -57,13 +57,14 @@
     <Compile Include="Assets\Scripts\AI\Pinky.cs" />
     <Compile Include="Assets\Scripts\Pacman.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\PelletScript.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\AI\Clyde.cs" />
     <Compile Include="Assets\Scripts\AI\Blinky.cs" />
     <Compile Include="Assets\Scripts\AI\Ghost.cs" />
     <Compile Include="Assets\Scripts\AI\Inky.cs" />
     <Compile Include="Assets\Scripts\Agent.cs" />
-    <Compile Include="Assets\Scripts\PelletScript.cs" />
+    <Compile Include="Assets\minicam.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
