@@ -24,8 +24,7 @@ public class GameManager : MonoBehaviour
     private int score = 0;
     private int collectedPellets = 0;
     private AudioSource aSrc;
-
-    //Auto-properties
+    
     public float PowerUpTimer { get; private set; } = -1;
     public Bounds GhostSpawnBounds { get { return ghostSpawnBounds; } }
 
@@ -97,6 +96,17 @@ public class GameManager : MonoBehaviour
             if (deathPanel.activeSelf == true)
             {
                 ToggleDeathPanel();
+            }
+        }
+        else
+        {
+            Debug.LogError("Game Manager: End Panel has not been assigned!");
+        }
+        if (winPanel != null)
+        {
+            if (winPanel.activeSelf == true)
+            {
+                ToggleWinPanel();
             }
         }
         else
