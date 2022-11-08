@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioClip powerPelletClip;
     [SerializeField] private AudioClip bonusItemClip;
     [SerializeField] private AudioClip eatGhostClip;
+    [SerializeField] private GameObject restartPanel;
 
     //Private variables
     private GameObject bonusItem;
@@ -81,6 +82,7 @@ public class GameManager : MonoBehaviour
         //Assign delegates/events
         Event_GameVictory += ToggleWinPanel;
         Delegate_GameOver += ToggleDeathPanel;
+
         //Disable bonus item
         if (bonusItem != null)
         {
@@ -109,7 +111,17 @@ public class GameManager : MonoBehaviour
                 ToggleWinPanel();
             }
         }
+        
+
+        if (restartPanel != null)
+        {
+            if (restartPanel.activeSelf == true)
+            {
+                TogglerestartPanel();
+            }
+        }
         else
+
         {
             Debug.LogError("Game Manager: End Panel has not been assigned!");
         }
@@ -273,6 +285,18 @@ public class GameManager : MonoBehaviour
             winPanel.SetActive(false);
         }
     }
+    private void TogglerestartPanel()
+    {
+        if (restartPanel.activeSelf == false)
+        {
+            restartPanel.SetActive(true);
+        }
+        else
+{
+    restartPanel.SetActive(false);
+}
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;

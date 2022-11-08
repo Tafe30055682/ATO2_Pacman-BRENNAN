@@ -55,9 +55,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts 1\Interactive.cs" />
     <Compile Include="Assets\minicam.cs" />
+    <Compile Include="Assets\Scripts 1\MainMenu.cs" />
     <Compile Include="Assets\Scripts\AI\Pinky.cs" />
     <Compile Include="Assets\Scripts\Pacman.cs" />
     <Compile Include="Assets\TargetTracker.cs" />
+    <Compile Include="Assets\Quit.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\PelletScript.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -66,8 +68,15 @@
     <Compile Include="Assets\Scripts\AI\Ghost.cs" />
     <Compile Include="Assets\Scripts\AI\Inky.cs" />
     <Compile Include="Assets\Scripts\Agent.cs" />
-    <Compile Include="Assets\Scripts 1\MainMenu.cs" />
-    <Compile Include="Assets\Quit.cs" />
+    <Compile Include="Assets\restartmenu.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Zombie Sample\Scripts\ZombieCharacterControl.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Zombie Sample\Scripts\ZombieFree.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Zombie Sample\Scripts\ZombieCameraLogic.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Supercyan Character Pack Zombie Sample\Shaders\Legacy\CelShader.shader" />
+    <None Include="Assets\Supercyan Character Pack Zombie Sample\Shaders\SupercyanShader.shader" />
+    <None Include="Assets\Supercyan Character Pack Zombie Sample\Shaders\SupercyanShaderLighting.cginc" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

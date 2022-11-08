@@ -12,7 +12,7 @@ public abstract class Ghost : MonoBehaviour
     //Auto-properties
     public Pacman Target { get; private set; }
     public NavMeshAgent Agent { get; private set; }
-    public MeshRenderer GhostRenderer { get; private set; }
+    public SkinnedMeshRenderer GhostRenderer { get; private set; }
     public Material DefaultMaterial { get; private set; }
     public GhostState DefaultState { get; protected set; }
     public GhostState_Flee FleeState { get; private set; }
@@ -25,16 +25,10 @@ public abstract class Ghost : MonoBehaviour
     protected virtual void Awake()
     {
         //Get mesh renderer reference
-        TryGetComponent(out MeshRenderer renderer);
-        if (renderer != null)
-        {
-            GhostRenderer = renderer;
+        GhostRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
+        
             DefaultMaterial = GhostRenderer.material;
-        }
-        else
-        {
-            Debug.LogError($"Ghost: {gameObject.name} must have a Mesh Renderer!");
-        }
+        
         //Get nav mesh agent reference
         TryGetComponent(out NavMeshAgent agent);
         if(agent != null)
