@@ -346,7 +346,7 @@ public class GhostState_Respawn : GhostState
 
     public override void OnUpdate()
     {
-        if (Vector3.Distance(Instance.transform.position, target) < Instance.Agent.stoppingDistance)
+        if (Vector3.Distance(Instance.transform.position, target) < Instance.Agent.stoppingDistance + 2)
         {
             if (GameManager.Instance.PowerUpTimer != -1)
             {

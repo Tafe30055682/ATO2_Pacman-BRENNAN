@@ -1307,8 +1307,8 @@ MonoBehaviour:
   scoreText: {fileID: 194047232}
   bonusItemSpawn: {fileID: 106659339}
   ghostSpawnBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: -1, y: 2, z: 1}
+    m_Extent: {x: 3, y: 2, z: 3}
   deathPanel: {fileID: 733455448}
   winPanel: {fileID: 733455448}
   pelletClip: {fileID: 8300000, guid: 94c2519b8e1a0af4b96d2c494598a3a1, type: 3}
